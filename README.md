@@ -30,7 +30,7 @@ cd ..
 
 * Move **getch.h** and **getch.o** to your project directory
 * Add `#include "getch.h"` to your source files
-* Move the **getch.o** file to your project directory and compile it with other files e.g. `gcc main.c getch.o`
+* Compile **getch.o** file with other files e.g. `gcc main.c getch.o`
 
 ## Documentation
 
