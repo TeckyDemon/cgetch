@@ -28,7 +28,7 @@ make
 cd ..
 ```
 
-* Move **cgetch** directory to your project directory
+* Move **getch.h** and **getch.o** to your project directory
 * Add `#include "getch.h"` to your source files
 * Move the **getch.o** file to your project directory and compile it with other files e.g. `gcc main.c getch.o`
 
