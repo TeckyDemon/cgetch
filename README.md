@@ -24,9 +24,7 @@ Install **make** and **mingw**.
 
 ```
 git clone "https://github.com/DeBos99/cgetch.git"
-cd cgetch
-make
-cd ..
+make -C cgetch
 ```
 
 * Move **cgetch** directory to your project directory
