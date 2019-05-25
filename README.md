@@ -1,5 +1,7 @@
 # CGetch
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 **CGetch** is a cross-platform getch function for C.
 
 ## Content
