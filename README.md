@@ -24,27 +24,71 @@
 ## Content
 
 - [Content](#content)
-- [Prerequisites](#prerequisites)
-  - [Windows](#windows)
 - [Installation](#installation)
+  - [Windows](#windows)
+  - [Unix](#unix)
+    - [Debian/Ubuntu](#apt)
+    - [Arch Linux/Manjaro](#pacman)
+    - [CentOS](#yum)
+    - [MacOS](#homebrew)
+- [Usage](#usage)
 - [Documentation](#documentation)
   - [Methods](#methods)
 - [Authors](#authors)
 - [Contact](#contact)
 - [License](#license)
 
-## Prerequisites
+## Installation
 
 ### Windows
 
-Install **make** and **mingw**.
-
-## Installation
-
+* Install [Make](http://gnuwin32.sourceforge.net/packages/make.htm).
+* Install [MinGW](https://sourceforge.net/projects/mingw-w64/files/latest/download).
+* Run following command in the terminal:
 ```
 git clone "https://github.com/DeBos99/cgetch.git"
 make -C cgetch
 ```
+
+### Unix
+
+#### <a name="APT">Debian/Ubuntu based
+
+* Run following commands in the terminal:
+```
+sudo apt install git gcc -y
+git clone "https://github.com/DeBos99/cgetch.git"
+make -C cgetch
+```
+
+#### <a name="Pacman">Arch Linux/Manjaro
+
+* Run following commands in the terminal:
+```
+sudo pacman -S git gcc --noconfirm
+git clone "https://github.com/DeBos99/cgetch.git"
+make -C cgetch
+```
+
+#### <a name="YUM">CentOS
+
+* Run following commands in the terminal:
+```
+sudo yum install git gcc -y
+git clone "https://github.com/DeBos99/cgetch.git"
+make -C cgetch
+```
+
+#### <a name="Homebrew">MacOS
+
+* Run following commands in the terminal:
+```
+brew install git gcc
+git clone "https://github.com/DeBos99/cgetch.git"
+make -C cgetch
+```
+
+## Usage
 
 * Move **cgetch** directory to your project directory
 * Add `#include "cgetch/getch.h"` to your source files
@@ -55,7 +99,7 @@ make -C cgetch
 ### Methods
 
 | Method                     | Description                            |
-| :---                       | :---                                   |
+| :------------------------- | :------------------------------------- |
 | void initTermios(int echo) | Initializes new terminal I/O settings. |
 | void resetTermios()        | Restores old terminal I/O settings.    |
 | char getch_(int echo)      | Reads one character.                   |
